@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LengthConverter/1.0.0": {
+        "runtime": {
+          "LengthConverter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LengthConverter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
