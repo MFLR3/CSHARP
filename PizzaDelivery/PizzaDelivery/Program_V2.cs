@@ -44,7 +44,6 @@ namespace PizzaDelivery
                     for (int i = 0; i < sizes.Length; i++)
                     {
                         Console.WriteLine(sizes[i] + " - " + (i + 1));
-                     
                     }
                     sizeChoice = Console.ReadLine();
 
@@ -56,7 +55,6 @@ namespace PizzaDelivery
 
                     String baseChoice = Console.ReadLine();
                     Console.WriteLine("Base choice: " + baseChoice);
-
                     while( (pizzaBases[Convert.ToInt32(baseChoice) - 1] == "Cheese Stuffed Crust" && sizes[Convert.ToInt32(sizeChoice) - 1] == "Small") ||
                         (pizzaBases[Convert.ToInt32(baseChoice) - 1] == "Cheese Stuffed Crust" && sizes[Convert.ToInt32(sizeChoice) - 1] == "Medium"))
                     {
@@ -83,13 +81,12 @@ namespace PizzaDelivery
                     {
                         Console.WriteLine(sauces[i] + " - " + (i + 1));
                     }
-
+                    
                     String sauceChoice = Console.ReadLine();
 
                     // Pizza Toppings
                     List<String> toppingChoices = new List<String>();
                     String toppingChoice = "";
-
                     while(toppingChoice != "0")
                     {
                         Console.WriteLine("Please select your pizza toppings: ");
@@ -135,7 +132,6 @@ namespace PizzaDelivery
             Console.WriteLine(" ");
             Console.WriteLine("Here is your Order");
             double finalCost = 0;
-
             foreach (Pizza p in order)
             {
                 p.PrintPizza();
@@ -177,14 +173,12 @@ namespace PizzaDelivery
         public double CalculateCostOfPizza()
         {
             double cost = 0;
-
             if(pizzaBase == "Cheese Stuffed Crust")
             {
                 cost += 2.5;
             }
 
             cost = cost + toppings.Count;
-
             switch (size)
             {
                 case "Small":
