@@ -8,3 +8,7 @@ Bugs to fix:
 * try/catch statements to ensure the incorrect user-input does not crash the program.
 * Some additional detail in the menu is required, such as "Press 0 to exit toppings menu".
 
+
+## Fixes in V2
+* Additional detail and tidier formatting of text.
+
